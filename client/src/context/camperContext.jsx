@@ -42,7 +42,7 @@ export const CamperProvider = ({ children }) => {
 
   useEffect(() => {
     getBills();
-  }, [bills]);
+  }, []);
 
   const addCamper = async (day) => {
     const addCamperPromise = new Promise(async (resolve, reject) => {
